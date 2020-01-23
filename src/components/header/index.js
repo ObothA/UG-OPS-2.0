@@ -1,13 +1,16 @@
 import React from "react";
 
+import HeaderLeft from "./headerLeft";
+import HeaderMiddle from "./headerMiddle";
+import HeaderRight from "./headerRight";
 import "./header.css";
 
 export default function Header() {
   return (
     <div className="headerDiv">
-      <div className="inlineHeader"> item 1</div>
-      <div className="inlineHeader">item 2</div>
-      <div className="inlineHeader">item 3</div>
+      <HeaderLeft />
+      <HeaderMiddle />
+      <HeaderRight />
     </div>
   );
 }

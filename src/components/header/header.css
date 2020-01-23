@@ -5,11 +5,12 @@
   left: 0;
   width: 100%;
   background-color: white;
+  height: 3.6em;
 }
 
 .inlineHeader {
   display: inline-block;
-  margin: 1em;
-  width: 30%;
-  background-color: green;
+  vertical-align: top;
+  padding-top: 0.6em;
+  font-size: 115%;
 }
