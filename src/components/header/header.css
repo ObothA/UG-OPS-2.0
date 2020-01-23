@@ -1,0 +1,10 @@
+.headerDiv {
+  border-bottom: 3px solid blue;
+}
+
+.inlineHeader {
+  display: inline-block;
+  margin: 1em;
+  width: 30%;
+  background-color: green;
+}

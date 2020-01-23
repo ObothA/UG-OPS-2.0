@@ -1,10 +1,10 @@
 import React from "react";
 
-import HelloWorld from "./components/helloWorld";
+import Dashboard from "./components/dashboard";
 import "./App.css";
 
 function App() {
-  return <HelloWorld />;
+  return <Dashboard />;
 }
 
 export default App;
