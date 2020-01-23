@@ -1,0 +1,9 @@
+.headerRight {
+  margin-left: 10em;
+  text-align: right;
+  width: 15em;
+}
+
+.userIcon {
+  cursor: pointer;
+}
