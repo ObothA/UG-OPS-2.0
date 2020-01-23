@@ -1,5 +1,10 @@
 .headerDiv {
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid darkblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
 }
 
 .inlineHeader {

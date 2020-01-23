@@ -1,8 +1,12 @@
 .setContentInline {
   display: inline-block;
-  margin: 2.5em 0.1em 5em 1.5em;
+  width: 68em;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  margin-top: 2.5em;
+  margin-right: 1em;
   min-height: 100vh;
-  width: 65em;
 }
 
 .contentbgColor {
