@@ -1,12 +1,22 @@
 import React from "react";
 
+import HR from "./hr";
+import Procurement from "./procurement";
+import Finance from "./finance";
 import "./sidebar.css";
 
 export default function Sidebar() {
   return (
     <div className="setSideBarInline sidebgColor fixeSidebar">
-      <p>side bar 1</p>
-      <p>side bar 2</p>
+      <div className="navContainer">
+        <HR />
+      </div>
+      <div className="navContainer">
+        <Procurement />
+      </div>
+      <div className="navContainer">
+        <Finance />
+      </div>
     </div>
   );
 }
