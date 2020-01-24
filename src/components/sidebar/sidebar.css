@@ -11,7 +11,6 @@
   text-align: left;
   color: white;
   padding-top: 3em;
-  padding-left: 2em;
 }
 
 .fixeSidebar {
@@ -20,7 +19,7 @@
 }
 
 .navContainer {
-  margin: 1.5em;
+  margin: 1.5em 1.5em 1.5em 0em;
   cursor: pointer;
-  font-size: 110%;
+  font-size: 108%;
 }
