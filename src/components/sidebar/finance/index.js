@@ -40,9 +40,9 @@ export default function Finance(props) {
           toggle ? 'showContent' : 'dntShowContent'
         }`}
       >
-        <p>this is the content in the sidebar</p>
-        <p>this is the content in the sidebar</p>
-        <div>this is the content in the sidebar</div>
+        <p>content 1</p>
+        <p>content 2</p>
+        <div>content 3</div>
       </div>
     </div>
   );

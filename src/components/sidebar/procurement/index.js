@@ -34,6 +34,15 @@ export default function Procurement(props) {
           </span>
         </IconContext.Provider>
       </p>
+      <div
+        className={`sidebarDropdownContent ${
+          toggle ? 'showContent' : 'dntShowContent'
+        }`}
+      >
+        <p>content 1</p>
+        <p>content 2</p>
+        <div>content 3</div>
+      </div>
     </div>
   );
 }
