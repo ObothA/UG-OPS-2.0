@@ -1,11 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { GiTakeMyMoney } from 'react-icons/gi';
-import { IoIosArrowDown } from 'react-icons/io';
-// import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { IconContext } from 'react-icons';
 
-export default function Procurement() {
+export default function Procurement(props) {
   return (
     <div>
       <p>
@@ -17,7 +17,7 @@ export default function Procurement() {
           }}
         >
           <span className="userIcon">
-            <IoIosArrowDown />
+            {props.toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
         </IconContext.Provider>
         Procurement
@@ -36,3 +36,7 @@ export default function Procurement() {
     </div>
   );
 }
+
+Procurement.propTypes = {
+  toggle: PropTypes.bool
+};

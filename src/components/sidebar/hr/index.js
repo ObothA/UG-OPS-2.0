@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { IoIosArrowDown, IoIosPeople } from 'react-icons/io';
+import { IoIosArrowDown, IoIosArrowUp, IoIosPeople } from 'react-icons/io';
 import { IconContext } from 'react-icons';
 
-export default function HR() {
+export default function HR(props) {
   return (
     <div>
       <p>
@@ -16,7 +16,7 @@ export default function HR() {
           }}
         >
           <span className="userIcon">
-            <IoIosArrowDown />
+            {props.toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
         </IconContext.Provider>
         Human Resource

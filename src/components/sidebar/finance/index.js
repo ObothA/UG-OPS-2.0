@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { FaFileInvoiceDollar } from 'react-icons/fa';
-import { IoIosArrowDown } from 'react-icons/io';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { IconContext } from 'react-icons';
 
-export default function Finance() {
+export default function Finance(props) {
   return (
     <div>
       <p>
@@ -16,7 +17,7 @@ export default function Finance() {
           }}
         >
           <span className="userIcon">
-            <IoIosArrowDown />
+            {props.toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
         </IconContext.Provider>
         Finance
@@ -35,3 +36,7 @@ export default function Finance() {
     </div>
   );
 }
+
+Finance.propTypes = {
+  toggle: PropTypes.bool
+};
