@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./headerMiddle.css";
+import './headerMiddle.css';
 
 export default function HeaderMiddle() {
   return (

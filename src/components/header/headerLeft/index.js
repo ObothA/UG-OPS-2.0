@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import chai from "../../../assets/img/chai.png";
-import "./headerLeft.css";
+import chai from '../../../assets/img/chai.png';
+import './headerLeft.css';
 
 export default function HeaderLeft() {
   return (

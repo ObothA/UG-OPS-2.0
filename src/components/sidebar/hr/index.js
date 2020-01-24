@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { IoIosArrowDown, IoIosPeople } from "react-icons/io";
-import { IconContext } from "react-icons";
+import { IoIosArrowDown, IoIosPeople } from 'react-icons/io';
+import { IconContext } from 'react-icons';
 
 export default function HR() {
   return (
@@ -10,9 +10,9 @@ export default function HR() {
       <p>
         <IconContext.Provider
           value={{
-            color: "white",
-            size: "2em",
-            className: "global-class-name"
+            color: 'white',
+            size: '2em',
+            className: 'global-class-name'
           }}
         >
           <span className="userIcon">
@@ -22,9 +22,9 @@ export default function HR() {
         Human Resource
         <IconContext.Provider
           value={{
-            color: "white",
-            size: "2em",
-            className: "global-class-name"
+            color: 'white',
+            size: '2em',
+            className: 'global-class-name'
           }}
         >
           <span className="userIcon">

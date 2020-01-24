@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import { GiTakeMyMoney } from "react-icons/gi";
-import { IoIosArrowDown } from "react-icons/io";
+import { GiTakeMyMoney } from 'react-icons/gi';
+import { IoIosArrowDown } from 'react-icons/io';
 // import { IoIosArrowUp } from "react-icons/io";
-import { IconContext } from "react-icons";
+import { IconContext } from 'react-icons';
 
 export default function Procurement() {
   return (
@@ -11,9 +11,9 @@ export default function Procurement() {
       <p>
         <IconContext.Provider
           value={{
-            color: "white",
-            size: "2em",
-            className: "global-class-name"
+            color: 'white',
+            size: '2em',
+            className: 'global-class-name'
           }}
         >
           <span className="userIcon">
@@ -23,9 +23,9 @@ export default function Procurement() {
         Procurement
         <IconContext.Provider
           value={{
-            color: "white",
-            size: "2em",
-            className: "global-class-name"
+            color: 'white',
+            size: '2em',
+            className: 'global-class-name'
           }}
         >
           <span className="userIcon">

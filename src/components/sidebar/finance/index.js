@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { FaFileInvoiceDollar } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
-import { IconContext } from "react-icons";
+import { FaFileInvoiceDollar } from 'react-icons/fa';
+import { IoIosArrowDown } from 'react-icons/io';
+import { IconContext } from 'react-icons';
 
 export default function Finance() {
   return (
@@ -10,9 +10,9 @@ export default function Finance() {
       <p>
         <IconContext.Provider
           value={{
-            color: "white",
-            size: "2em",
-            className: "global-class-name"
+            color: 'white',
+            size: '2em',
+            className: 'global-class-name'
           }}
         >
           <span className="userIcon">
@@ -22,9 +22,9 @@ export default function Finance() {
         Finance
         <IconContext.Provider
           value={{
-            color: "white",
-            size: "2em",
-            className: "global-class-name"
+            color: 'white',
+            size: '2em',
+            className: 'global-class-name'
           }}
         >
           <span className="userIcon">

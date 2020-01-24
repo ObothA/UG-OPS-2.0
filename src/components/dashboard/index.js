@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Header from "../header";
-import Sidebar from "../sidebar";
-import Content from "../content";
-import "./dashboard.css";
+import Header from '../header';
+import Sidebar from '../sidebar';
+import Content from '../content';
+import './dashboard.css';
 
 function Dashboard() {
   return (
