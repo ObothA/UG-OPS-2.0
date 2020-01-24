@@ -33,14 +33,17 @@ export default function Sidebar() {
 
   return (
     <div className="setSideBarInline sidebgColor fixeSidebar">
-      <div className="navContainer" onClick={handleHrToggle}>
-        <HR toggle={hrToggle} />
+      <div className="navContainer">
+        <HR toggle={hrToggle} onClick={handleHrToggle} />
       </div>
-      <div className="navContainer" onClick={handleProcurementToggle}>
-        <Procurement toggle={procurementToggle} />
+      <div className="navContainer">
+        <Procurement
+          toggle={procurementToggle}
+          onClick={handleProcurementToggle}
+        />
       </div>
-      <div className="navContainer" onClick={handleFinanceToggle}>
-        <Finance toggle={financeToggle} />
+      <div className="navContainer">
+        <Finance toggle={financeToggle} onClick={handleFinanceToggle} />
       </div>
     </div>
   );

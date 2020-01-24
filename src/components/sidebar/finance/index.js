@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { FaFileInvoiceDollar } from 'react-icons/fa';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { IconContext } from 'react-icons';
 
+import './finance.css';
+
 export default function Finance(props) {
+  const { toggle, onClick } = props;
   return (
     <div>
-      <p>
+      <p onClick={onClick} className="sidebTopNav">
         <IconContext.Provider
           value={{
             color: 'white',
@@ -17,7 +19,7 @@ export default function Finance(props) {
           }}
         >
           <span className="userIcon">
-            {props.toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            {toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
         </IconContext.Provider>
         Finance
@@ -33,10 +35,20 @@ export default function Finance(props) {
           </span>
         </IconContext.Provider>
       </p>
+      <div
+        className={`sidebarDropdownContent ${
+          toggle ? 'showContent' : 'dntShowContent'
+        }`}
+      >
+        <p>this is the content in the sidebar</p>
+        <p>this is the content in the sidebar</p>
+        <div>this is the content in the sidebar</div>
+      </div>
     </div>
   );
 }
 
 Finance.propTypes = {
-  toggle: PropTypes.bool
+  toggle: PropTypes.bool,
+  onClick: PropTypes.func
 };

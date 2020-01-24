@@ -20,6 +20,9 @@
 
 .navContainer {
   margin: 1.5em 1.5em 1.5em 0em;
-  cursor: pointer;
   font-size: 108%;
+}
+
+.sidebTopNav {
+  cursor: pointer;
 }

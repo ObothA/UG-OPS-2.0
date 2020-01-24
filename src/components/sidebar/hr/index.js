@@ -5,9 +5,10 @@ import { IoIosArrowDown, IoIosArrowUp, IoIosPeople } from 'react-icons/io';
 import { IconContext } from 'react-icons';
 
 export default function HR(props) {
+  const { toggle, onClick } = props;
   return (
     <div>
-      <p>
+      <p onClick={onClick} className="sidebTopNav">
         <IconContext.Provider
           value={{
             color: 'white',
@@ -16,7 +17,7 @@ export default function HR(props) {
           }}
         >
           <span className="userIcon">
-            {props.toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            {toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
         </IconContext.Provider>
         Human Resource
@@ -37,5 +38,6 @@ export default function HR(props) {
 }
 
 HR.propTypes = {
-  toggle: PropTypes.bool
+  toggle: PropTypes.bool,
+  onClick: PropTypes.func
 };

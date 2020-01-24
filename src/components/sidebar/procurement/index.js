@@ -6,9 +6,10 @@ import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { IconContext } from 'react-icons';
 
 export default function Procurement(props) {
+  const { toggle, onClick } = props;
   return (
     <div>
-      <p>
+      <p onClick={onClick} className="sidebTopNav">
         <IconContext.Provider
           value={{
             color: 'white',
@@ -17,7 +18,7 @@ export default function Procurement(props) {
           }}
         >
           <span className="userIcon">
-            {props.toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            {toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </span>
         </IconContext.Provider>
         Procurement
@@ -38,5 +39,6 @@ export default function Procurement(props) {
 }
 
 Procurement.propTypes = {
-  toggle: PropTypes.bool
+  toggle: PropTypes.bool,
+  onClick: PropTypes.func
 };
