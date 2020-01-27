@@ -1,9 +1,14 @@
 .headerRight {
-  margin-left: 10em;
+  margin-left: 5em;
   text-align: right;
-  width: 15em;
+  width: 20em;
 }
 
 .userIcon {
   cursor: pointer;
+}
+
+.name {
+  color: darkblue;
+  padding-right: 0.8em;
 }

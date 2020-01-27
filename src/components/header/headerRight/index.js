@@ -7,6 +7,7 @@ import './headerRight.css';
 export default function HeaderRight() {
   return (
     <div className="inlineHeader headerRight">
+      <span className="name">Abel Oboth anotherVeryLongName</span>
       <IconContext.Provider
         value={{
           color: 'darkblue',
