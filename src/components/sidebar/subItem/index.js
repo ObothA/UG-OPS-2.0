@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // import { FaPlaneDeparture } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 
-import Icon from '../../icon';
+import Icon from '../icon';
 import './subItem.css';
 
 export default function SubItem(props) {

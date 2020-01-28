@@ -6,7 +6,7 @@ import { FaPlaneDeparture, FaFileContract, FaTractor } from 'react-icons/fa';
 
 import Arrow from '../arrow';
 import Icon from '../icon';
-import SubItem from './subItem';
+import SubItem from '../subItem';
 
 export default function HR(props) {
   const { toggle, onClick } = props;
