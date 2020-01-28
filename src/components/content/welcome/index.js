@@ -1,4 +1,5 @@
 import React from 'react';
+import chai from '../../../assets/img/chai.png';
 
 import './welcome.css';
 
@@ -7,6 +8,7 @@ export default function Welcome() {
     <div className="setContentInline contentbgColor welcome">
       <h1>You are welcome, to</h1>
       <h2>UG OPS 2.0</h2>
+      <img src={chai} alt="logo" height="400" className="welcomeLogo" />
     </div>
   );
 }
