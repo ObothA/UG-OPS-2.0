@@ -5,6 +5,7 @@ import Header from './components/header';
 import Sidebar from './components/sidebar';
 import Welcome from './components/content/welcome';
 import PageNotFound from './components/content/pageNotFound';
+import HR from './components/content/hr';
 
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
       <Sidebar />
       <Switch>
         <Route exact path="/" component={Welcome} />
+        <Route path="/hr/:componentToRender" component={HR} />
 
         <Route component={PageNotFound} />
       </Switch>

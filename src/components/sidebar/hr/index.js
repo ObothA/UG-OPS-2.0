@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import { IoIosPeople } from 'react-icons/io';
 import { FaPlaneDeparture, FaFileContract, FaTractor } from 'react-icons/fa';
@@ -21,20 +22,26 @@ export default function HR(props) {
           toggle ? 'showContent' : 'dntShowContent'
         }`}
       >
-        <p>
-          <Icon icon={() => <FaPlaneDeparture />} />
-          Leave Application
-        </p>
+        <Link to="/hr/LeaveApplication">
+          <p>
+            <Icon icon={() => <FaPlaneDeparture />} />
+            Leave Application
+          </p>
+        </Link>
 
-        <p>
-          <Icon icon={() => <FaFileContract />} />
-          Contract Renewal
-        </p>
+        <Link to="/hr/ContractRenewal">
+          <p>
+            <Icon icon={() => <FaFileContract />} />
+            Contract Renewal
+          </p>
+        </Link>
 
-        <p>
-          <Icon icon={() => <FaTractor />} />
-          Work Permit Renewal
-        </p>
+        <Link to="/hr/WorkPermitRenewal">
+          <p>
+            <Icon icon={() => <FaTractor />} />
+            Work Permit Renewal
+          </p>
+        </Link>
       </div>
     </div>
   );
