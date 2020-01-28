@@ -3,11 +3,11 @@ import { IconContext } from 'react-icons';
 import PropTypes from 'prop-types';
 
 export default function Icon(props) {
-  const { icon } = props;
+  const { icon, color } = props;
   return (
     <IconContext.Provider
       value={{
-        color: 'white',
+        color: color || 'white',
         size: '2em',
         className: 'global-class-name'
       }}
@@ -18,5 +18,6 @@ export default function Icon(props) {
 }
 
 Icon.propTypes = {
-  icon: PropTypes.func.isRequired
+  icon: PropTypes.func.isRequired,
+  color: PropTypes.string
 };

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 import { IoIosPeople } from 'react-icons/io';
 import { FaPlaneDeparture, FaFileContract, FaTractor } from 'react-icons/fa';
 
 import Arrow from '../arrow';
 import Icon from '../icon';
+import SubItem from './subItem';
 
 export default function HR(props) {
   const { toggle, onClick } = props;
@@ -22,26 +22,23 @@ export default function HR(props) {
           toggle ? 'showContent' : 'dntShowContent'
         }`}
       >
-        <Link to="/hr/LeaveApplication">
-          <p>
-            <Icon icon={() => <FaPlaneDeparture />} />
-            Leave Application
-          </p>
-        </Link>
+        <SubItem
+          link="/hr/LeaveApplication"
+          IcontoSet={FaPlaneDeparture}
+          textToSet="Leave Application"
+        />
 
-        <Link to="/hr/ContractRenewal">
-          <p>
-            <Icon icon={() => <FaFileContract />} />
-            Contract Renewal
-          </p>
-        </Link>
+        <SubItem
+          link="/hr/ContractRenewal"
+          IcontoSet={FaFileContract}
+          textToSet="Contract Renewal"
+        />
 
-        <Link to="/hr/WorkPermitRenewal">
-          <p>
-            <Icon icon={() => <FaTractor />} />
-            Work Permit Renewal
-          </p>
-        </Link>
+        <SubItem
+          link="/hr/WorkPermitRenewal"
+          IcontoSet={FaTractor}
+          textToSet="Work Permit Renewal"
+        />
       </div>
     </div>
   );
