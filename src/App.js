@@ -3,8 +3,8 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import Header from './components/header';
 import Sidebar from './components/sidebar';
-import Welcome from './components/welcome';
-import PageNotFound from './components/pageNotFound';
+import Welcome from './components/content/welcome';
+import PageNotFound from './components/content/pageNotFound';
 
 import './App.css';
 
