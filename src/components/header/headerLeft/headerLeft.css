@@ -14,4 +14,5 @@
 .inlineLogo {
   display: inline-block;
   vertical-align: top;
+  padding-bottom: 0.9em;
 }
