@@ -31,7 +31,9 @@ export default function HeaderRight() {
 
   return (
     <div className="inlineHeader headerRight">
-      <span className="name">Abel Oboth anotherVeryLongName</span>
+      <span className="name">
+        AbelChrisAlexAndrewPaulGreen Oboth anotherVeryLongName
+      </span>
       <div className="customDropdown">
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
           <DropdownToggle tag={'span'}>{returnIcon()}</DropdownToggle>
