@@ -40,3 +40,7 @@
 .dntShowContent {
   display: none;
 }
+
+.referencePoint {
+  background-color: green;
+}

@@ -1,39 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FaFileInvoiceDollar } from 'react-icons/fa';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
-import { IconContext } from 'react-icons';
+import Icon from '../icon';
 
+import Arrow from '../arrow';
 import './finance.css';
 
 export default function Finance(props) {
   const { toggle, onClick } = props;
+
   return (
     <div>
       <p onClick={onClick} className="sidebTopNav">
-        <IconContext.Provider
-          value={{
-            color: 'white',
-            size: '2em',
-            className: 'global-class-name'
-          }}
-        >
-          <span className="userIcon">
-            {toggle ? <IoIosArrowUp /> : <IoIosArrowDown />}
-          </span>
-        </IconContext.Provider>
+        <Icon icon={() => <FaFileInvoiceDollar />} />
         Finance
-        <IconContext.Provider
-          value={{
-            color: 'white',
-            size: '2em',
-            className: 'global-class-name'
-          }}
-        >
-          <span className="userIcon">
-            <FaFileInvoiceDollar />
-          </span>
-        </IconContext.Provider>
+        <Arrow toggle={toggle} />
       </p>
       <div
         className={`sidebarDropdownContent ${

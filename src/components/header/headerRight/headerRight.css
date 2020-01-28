@@ -1,5 +1,5 @@
 .headerRight {
-  margin-left: 5em;
+  margin-left: 3em;
   text-align: right;
   width: 20em;
 }
@@ -11,4 +11,9 @@
 .name {
   color: darkblue;
   padding-right: 0.8em;
+}
+
+.customDropdown {
+  margin-top: -1.8em;
+  margin-right: -2em;
 }
